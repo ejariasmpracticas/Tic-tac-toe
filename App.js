@@ -22,7 +22,7 @@ render() {
      <View style={styles.container}>
        <Header />
        {
-         !gameStarted ? (
+         gameStarted ? (
            <GameBoard />
          ) : (
            <View>
@@ -55,6 +55,7 @@ const styles = StyleSheet.create({
       marginTop: 50,
     },
     instructions: {
+      textAlign: 'center', 
       marginTop: 20,
       color: 'grey',
       marginBottom: 5,
